@@ -1,6 +1,12 @@
 #include "StdAfx.h"
 #include "Graph.h"
 
+Graph::Graph()
+{
+	nodes = vector<Node>();
+	baseNodes = vector<Node*>();
+}
+
 
 Graph::Graph(int numberOfBaseNodes)
 {
@@ -13,9 +19,10 @@ Graph::~Graph(void)
 {
 }
 
-void Graph::createNode() {
+Node* Graph::createNode() {
 	Node* tempNode = new Node(6);
-	nodes.insert(nodes.end(),&tempNode);
+	nodes.push_back(tempNode[0]);
+	return tempNode;
 }
 
 Node* Graph::getBaseNodeAt(unsigned int index) {

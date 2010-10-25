@@ -10,10 +10,11 @@ class Graph
 	vector<Node*> baseNodes;
 
 public:
+	Graph();
 	Graph(int);
 	~Graph(void);
 
-	void createNode();
+	Node* createNode();
 	Node* getBaseNodeAt(unsigned int);
 	void setBaseNodeAt(unsigned int, Node*);
 };

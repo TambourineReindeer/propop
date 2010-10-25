@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "Bubble Level Editor.h"
+#include "Graph.h"
 
 #define MAX_LOADSTRING 100
 
@@ -51,6 +52,14 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 			DispatchMessage(&msg);
 		}
 	}
+
+	Graph graph;
+	Node* n = graph.createNode();
+	n->setType(12);
+	Node* n1 = graph.createNode();
+	n1->setType(34);
+	n->setNeighbourAt(0,n1);
+	
 
 	return (int) msg.wParam;
 }

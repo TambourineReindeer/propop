@@ -23,3 +23,11 @@ void Node::setNeighbourAt(unsigned int index, Node* node){
 		nodes[index] = node;
 	}
 }
+
+int Node::getType() {
+	return type;
+}
+
+void Node::setType(int newType) {
+	type = newType;
+}
