@@ -1,49 +1,49 @@
 #include "StdAfx.h"
-#include "bolla.h"
+#include "Bolla.h"
 
-bolla::bolla(void)
+Bolla::Bolla(void)
 {
 }
 
 
-bolla::~bolla(void)
+Bolla::~Bolla(void)
 {
 }
 
-int bolla::getX() {
-	return x;
+int Bolla::getX() {
+	return this->x;
 }
 
-void bolla::putX(int newX) {
-	x = newX;
+void Bolla::putX(int newX) {
+	this->x = newX;
 }
 
-int bolla::getY() {
-	return y;
+int Bolla::getY() {
+	return this->y;
 }
 
-void bolla::putY(int newY) {
-	y = newY;
+void Bolla::putY(int newY) {
+	this->y = newY;
 }
 
-void bolla::resetType() {
-	type = 0;
+void Bolla::resetType() {
+	this->type = 0;
 }
 
-void bolla::nextType() {
-	type++;
-	if (type >= TYPES_MAX) {
-		resetType();
+void Bolla::nextType() {
+	this->type++;
+	if (this->type >= TYPES_MAX) {
+		this->resetType();
 	} 
 }
 
-void bolla::prevType() {
-	type--;
-	if (type < 0) {
-		type = TYPES_MAX;
+void Bolla::prevType() {
+	this->type--;
+	if (this->type < 0) {
+		this->type = TYPES_MAX;
 	}
 }
 
-int bolla::getType() {
-	return type;
+int Bolla::getType() {
+	return this->type;
 }

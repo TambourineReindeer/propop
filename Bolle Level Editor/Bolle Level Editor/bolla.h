@@ -2,15 +2,15 @@
 
 int const TYPES_MAX = 8;
 
-class bolla
+class Bolla
 {
 	int x;
 	int y;
 	int type;
 
 public:
-	bolla(void);
-	~bolla(void);
+	Bolla(void);
+	~Bolla(void);
 
 	int getX();
 	void putX(int newX);
