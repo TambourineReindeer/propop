@@ -2,23 +2,28 @@
 
 int const TYPES_MAX = 8;
 
-class Bolla
+enum Types {
+
+};
+
+
+class Bubble
 {
 	int x;
 	int y;
 	int type;
 
 public:
-	Bolla(void);
-	~Bolla(void);
+	Bubble(void);
+	~Bubble(void);
 
-	int getX();
+	int  getX();
 	void putX(int newX);
-	int getY();
+	int  getY();
 	void putY(int newY);
 	void resetType();
 	void nextType();
 	void prevType();
-	int getType();
+	int  getType();
 };
 

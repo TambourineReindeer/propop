@@ -1,8 +1,8 @@
-// Bolle Level Editor.cpp : Defines the entry point for the application.
+// Bubble Level Editor.cpp : Defines the entry point for the application.
 //
 
 #include "stdafx.h"
-#include "Bolle Level Editor.h"
+#include "Bubble Level Editor.h"
 
 #define MAX_LOADSTRING 100
 

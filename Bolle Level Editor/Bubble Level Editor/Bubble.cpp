@@ -1,49 +1,49 @@
 #include "StdAfx.h"
-#include "Bolla.h"
+#include "Bubble.h"
 
-Bolla::Bolla(void)
+Bubble::Bubble(void)
 {
 }
 
 
-Bolla::~Bolla(void)
+Bubble::~Bubble(void)
 {
 }
 
-int Bolla::getX() {
+int Bubble::getX() {
 	return this->x;
 }
 
-void Bolla::putX(int newX) {
+void Bubble::putX(int newX) {
 	this->x = newX;
 }
 
-int Bolla::getY() {
+int Bubble::getY() {
 	return this->y;
 }
 
-void Bolla::putY(int newY) {
+void Bubble::putY(int newY) {
 	this->y = newY;
 }
 
-void Bolla::resetType() {
+void Bubble::resetType() {
 	this->type = 0;
 }
 
-void Bolla::nextType() {
+void Bubble::nextType() {
 	this->type++;
 	if (this->type >= TYPES_MAX) {
 		this->resetType();
 	} 
 }
 
-void Bolla::prevType() {
+void Bubble::prevType() {
 	this->type--;
 	if (this->type < 0) {
 		this->type = TYPES_MAX;
 	}
 }
 
-int Bolla::getType() {
+int Bubble::getType() {
 	return this->type;
 }
