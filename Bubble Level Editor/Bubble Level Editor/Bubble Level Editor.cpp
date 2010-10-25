@@ -43,6 +43,13 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 
 	hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_BUBBLELEVELEDITOR));
 
+	Graph graph;
+	Node* n = graph.createNode();
+	n->setType(12);
+	Node* n1 = graph.createNode();
+	n1->setType(34);
+	n->setNeighbourAt(0,n1);
+
 	// Main message loop:
 	while (GetMessage(&msg, NULL, 0, 0))
 	{
@@ -53,12 +60,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
 		}
 	}
 
-	Graph graph;
-	Node* n = graph.createNode();
-	n->setType(12);
-	Node* n1 = graph.createNode();
-	n1->setType(34);
-	n->setNeighbourAt(0,n1);
+
 	
 
 	return (int) msg.wParam;

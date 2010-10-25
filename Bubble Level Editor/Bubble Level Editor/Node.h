@@ -9,6 +9,7 @@ class Node
 	int type;
 
 public:
+	Node();
 	Node(int);
 	~Node(void);
 

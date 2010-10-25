@@ -7,22 +7,19 @@ Graph::Graph()
 	baseNodes = vector<Node*>();
 }
 
-
 Graph::Graph(int numberOfBaseNodes)
 {
 	nodes = vector<Node>();
 	baseNodes = vector<Node*>(numberOfBaseNodes);
 }
 
-
 Graph::~Graph(void)
 {
 }
 
 Node* Graph::createNode() {
-	Node* tempNode = new Node(6);
-	nodes.push_back(tempNode[0]);
-	return tempNode;
+	nodes.push_back((new Node(6))[0]);
+	return &(nodes.back());
 }
 
 Node* Graph::getBaseNodeAt(unsigned int index) {

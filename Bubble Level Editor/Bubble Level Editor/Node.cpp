@@ -1,6 +1,11 @@
 #include "StdAfx.h"
 #include "Node.h"
 
+Node::Node()
+{
+	nodes = vector<Node*>(12);
+}
+
 Node::Node(int numberOfNeighbours)
 {
 	nodes = vector<Node*>(numberOfNeighbours);
