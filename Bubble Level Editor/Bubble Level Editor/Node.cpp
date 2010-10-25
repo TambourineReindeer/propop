@@ -11,13 +11,15 @@ Node::~Node(void)
 {
 }
 
-Node* getNeighbourAt(int index) {
+Node* Node::getNeighbourAt(unsigned int index) {
 	if ((index >= 0) && (index < nodes.size())) {
 		return nodes[index];
 	}
 	else return NULL;
 }
 
-void setNeighbourAt(int index, Node* node){
-
+void Node::setNeighbourAt(unsigned int index, Node* node){
+	if ((index >= 0) && (index < nodes.size())) {
+		nodes[index] = node;
+	}
 }

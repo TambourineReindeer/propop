@@ -11,7 +11,7 @@ public:
 	Node(int);
 	~Node(void);
 
-	Node* getNeighbourAt(int);
-	void setNeighbourAt(int, Node*);
+	Node* getNeighbourAt(unsigned int);
+	void setNeighbourAt(unsigned int, Node*);
 };
 
