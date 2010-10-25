@@ -13,6 +13,7 @@ public:
 	Graph(int);
 	~Graph(void);
 
+	void createNode();
 	Node* getBaseNodeAt(unsigned int);
 	void setBaseNodeAt(unsigned int, Node*);
 };

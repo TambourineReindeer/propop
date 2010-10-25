@@ -13,6 +13,11 @@ Graph::~Graph(void)
 {
 }
 
+void Graph::createNode() {
+	Node* tempNode = new Node(6);
+	nodes.insert(nodes.end(),&tempNode);
+}
+
 Node* Graph::getBaseNodeAt(unsigned int index) {
 	if ((index >= 0) && (index < nodes.size())) {
 		return baseNodes[index];
