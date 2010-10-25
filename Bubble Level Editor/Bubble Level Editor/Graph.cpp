@@ -2,9 +2,10 @@
 #include "Graph.h"
 
 
-Graph::Graph(int numberOfNodes)
+Graph::Graph(int numberOfBaseNodes)
 {
-	nodes = vector<Node*>(numberOfNodes);
+	nodes = vector<Node>();
+	baseNodes = vector<Node*>(numberOfBaseNodes);
 }
 
 
@@ -12,15 +13,15 @@ Graph::~Graph(void)
 {
 }
 
-Node* Graph::getNodeAt(unsigned int index) {
+Node* Graph::getBaseNodeAt(unsigned int index) {
 	if ((index >= 0) && (index < nodes.size())) {
-		return nodes[index];
+		return baseNodes[index];
 	}
 	else return NULL;
 }
 
-void Graph::setNodeAt(unsigned int index, Node* node){
+void Graph::setBaseNodeAt(unsigned int index, Node* baseNode){
 	if ((index >= 0) && (index < nodes.size())) {
-		nodes[index] = node;
+		baseNodes[index] = baseNode;
 	}
 }
