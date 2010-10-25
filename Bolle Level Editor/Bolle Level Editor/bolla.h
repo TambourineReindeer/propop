@@ -12,13 +12,13 @@ public:
 	bolla(void);
 	~bolla(void);
 
-	int getx();
-	void putx(int newx);
-	int gety();
-	void puty(int newy);
-	void resettype();
-	void nexttype();
-	void prevtype();
-	int gettype();
+	int getX();
+	void putX(int newX);
+	int getY();
+	void putY(int newY);
+	void resetType();
+	void nextType();
+	void prevType();
+	int getType();
 };
 

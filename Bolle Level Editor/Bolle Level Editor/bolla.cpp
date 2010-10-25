@@ -10,40 +10,40 @@ bolla::~bolla(void)
 {
 }
 
-int bolla::getx() {
+int bolla::getX() {
 	return x;
 }
 
-void bolla::putx(int newx) {
-	x = newx;
+void bolla::putX(int newX) {
+	x = newX;
 }
 
-int bolla::gety() {
+int bolla::getY() {
 	return y;
 }
 
-void bolla::puty(int newy) {
-	y = newy;
+void bolla::putY(int newY) {
+	y = newY;
 }
 
-void bolla::resettype() {
+void bolla::resetType() {
 	type = 0;
 }
 
-void bolla::nexttype() {
+void bolla::nextType() {
 	type++;
 	if (type >= TYPES_MAX) {
-		resettype();
+		resetType();
 	} 
 }
 
-void bolla::prevtype() {
+void bolla::prevType() {
 	type--;
 	if (type < 0) {
 		type = TYPES_MAX;
 	}
 }
 
-int bolla::gettype() {
+int bolla::getType() {
 	return type;
 }
