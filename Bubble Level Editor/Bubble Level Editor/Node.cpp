@@ -11,7 +11,6 @@ Node::Node(int numberOfNeighbours)
 	nodes = vector<Node*>(numberOfNeighbours);
 }
 
-
 Node::~Node(void)
 {
 }

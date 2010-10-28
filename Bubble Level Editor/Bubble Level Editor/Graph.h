@@ -6,7 +6,7 @@ using namespace std;
 
 class Graph
 {
-	vector<Node> nodes;
+	vector<Node*> nodes;
 	vector<Node*> baseNodes;
 
 public:
